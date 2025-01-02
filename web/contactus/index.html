@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PIJARAYA - Contact Us</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+  <!--link bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+
+  <!-- bootstrap ikon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- link css -->
+  <link rel="stylesheet" href="../CSS/style_artikel.css" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles_article.css" />
+  <body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"> PIJARAYA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item"><a class="nav-link" href="http://localhost/xirpl/portofolio/web/index.html#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://localhost/xirpl/portofolio/web/index.html#about">about</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://localhost/xirpl/portofolio/web/index.html#team">teacher</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" target="_self" role="botton" aria-expanded="false">More</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="http://localhost/xirpl/portofolio/web/tableuser/db_siswa_user.php" target="_self">Data Siswa XI RPL</a></li>
+                <li><a class="dropdown-item" href="http://localhost/xirpl/portofolio/web/article/article.html" target="_self">Article</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="http://localhost/xirpl/portofolio/web/contactus/index.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end navigation-->
+
+    <div class="container">
+      <div class="inner-container">
+        <div class="tile1">
+          <div class="tile1-heading">Contact Us</div>
+          <div class="form-row">Butuh bantuan? Silahkan hubungi kami</div>
+          <!-- Form dengan metode POST -->
+          <form action="process.php" method="POST">
+            <div class="form-row">
+              <input type="text" name="name" class="form-field" placeholder="Masukan Nama*" required />
+            </div>
+            <div class="form-row">
+              <input type="email" name="email" class="form-field" placeholder="Masukan Email*" required />
+            </div>
+            <div class="form-row">
+              <textarea name="comment" class="form-field" placeholder="Jelaskan Permasalahan*" required></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit" class="form-field btn"><a class="nav-link" href="http://localhost/XIRPL/portofolio/portofolio/web/contactus/index.html"></a>Kirim</button>
+            </div>
+          </form>
+        </div>
+        <div class="tile2">
+          <div class="tile2-image">
+            <img src="images/contact.png" alt="Contact Image" />
+          </div>
+          <div>
+            <div class="form-row"><img src="./images/location.png" class="contact-image" /><span>JL. Satu Hati</span></div>
+            <div class="form-row"><img src="./images/phone.png" class="contact-image" /><span>+62 888-723-156</span></div>
+            <div class="form-row"><img src="./images/mail.png" class="contact-image" /><span>pijarayateam@gmail.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
